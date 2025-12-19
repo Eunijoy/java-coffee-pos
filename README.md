@@ -1,62 +1,52 @@
-Java Coffee POS
+# ☕ Java Coffee POS System
 
-A simple Coffee Shop Point-of-Sale System built using Java (NetBeans) and MySQL (XAMPP). Import the database file coffee_management.sql into XAMPP/phpMyAdmin (database name: coffee_management).
+A simple Coffee Shop Point-of-Sale (POS) System built using **Java (NetBeans)** and **MySQL (XAMPP)**.  
+This application manages coffee shop sales, users, inventory, and reporting with separate roles for **Admin** and **Cashier**.
 
-Features
+---
 
-Admin
+## 📌 Features
 
-Inventory management
+### Admin
+- Inventory management  
+- User management (Add / Update / Delete users)  
+- Sales reports  
+- Menu and pricing control  
 
-User management (add/update/delete users)
+### Cashier
+- Menu display  
+- Order processing  
+- Payment and change computation  
+- Receipt generation  
+- Automatic saving of transaction records  
 
-Sales reports
+---
 
-Menu & pricing control
+## 🛠 Requirements
+- Java JDK 8 or higher  
+- NetBeans IDE  
+- XAMPP (MySQL enabled)  
+- MySQL Connector/J (JDBC Driver)  
 
-Cashier
+---
 
-Menu display
+## ⚙️ Setup Instructions
 
-Order processing
+1. Start **MySQL** in XAMPP  
+2. Open **phpMyAdmin**  
+3. Create a database named:
+4. Import the database file:
 
-Payment & change computation
-
-Receipt generation
-
-Saves transaction records
-
-Requirements
-
-Java JDK 8+
-
-NetBeans IDE
-
-XAMPP (MySQL enabled)
-
-MySQL Connector/J (JDBC driver)
-
-Setup
-
-Start MySQL in XAMPP
-
-Go to phpMyAdmin → Create database: coffee_management
-
-Import: coffee_management.sql
-
-Open project in NetBeans
-
-Update DB connection:
-
+5. Open the project in **NetBeans**
+6. Update the database connection in your Java code:
+```java
 String url = "jdbc:mysql://localhost:3306/coffee_management";
 String user = "root";
 String password = "";
 
 
-Build & run the project.
+Database
 
-Notes
+Database Name: coffee_management
 
-Admin and Cashier have separate dashboards.
-
-All sales are automatically saved into the database.
+Import File: coffee_management.sql
