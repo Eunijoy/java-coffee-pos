@@ -5,7 +5,7 @@ This application manages coffee shop sales, users, inventory, and reporting with
 
 ---
 
-## 📌 Features
+## Features
 
 ### Admin
 - Inventory management  
